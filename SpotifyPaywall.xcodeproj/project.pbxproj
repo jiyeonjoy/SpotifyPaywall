@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		DAAE9B7C2A78DBA6007F55D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B7B2A78DBA6007F55D0 /* AppDelegate.swift */; };
 		DAAE9B7E2A78DBA6007F55D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B7D2A78DBA6007F55D0 /* SceneDelegate.swift */; };
-		DAAE9B802A78DBA6007F55D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B7F2A78DBA6007F55D0 /* ViewController.swift */; };
 		DAAE9B832A78DBA6007F55D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAE9B812A78DBA6007F55D0 /* Main.storyboard */; };
 		DAAE9B852A78DBA7007F55D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAE9B842A78DBA7007F55D0 /* Assets.xcassets */; };
 		DAAE9B882A78DBA7007F55D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAE9B862A78DBA7007F55D0 /* LaunchScreen.storyboard */; };
 		DAAE9B932A78DBA8007F55D0 /* SpotifyPaywallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B922A78DBA8007F55D0 /* SpotifyPaywallTests.swift */; };
 		DAAE9B9D2A78DBA8007F55D0 /* SpotifyPaywallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B9C2A78DBA8007F55D0 /* SpotifyPaywallUITests.swift */; };
 		DAAE9B9F2A78DBA8007F55D0 /* SpotifyPaywallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9B9E2A78DBA8007F55D0 /* SpotifyPaywallUITestsLaunchTests.swift */; };
+		DAAE9BAC2A78E552007F55D0 /* PaywallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9BAB2A78E552007F55D0 /* PaywallViewController.swift */; };
+		DAAE9BAE2A78E587007F55D0 /* BannerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9BAD2A78E587007F55D0 /* BannerInfo.swift */; };
+		DAAE9BB02A78E592007F55D0 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9BAF2A78E592007F55D0 /* BannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		DAAE9B782A78DBA6007F55D0 /* SpotifyPaywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyPaywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAE9B7B2A78DBA6007F55D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAAE9B7D2A78DBA6007F55D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAAE9B7F2A78DBA6007F55D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAAE9B822A78DBA6007F55D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAAE9B842A78DBA7007F55D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAE9B872A78DBA7007F55D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		DAAE9B982A78DBA8007F55D0 /* SpotifyPaywallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyPaywallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAE9B9C2A78DBA8007F55D0 /* SpotifyPaywallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPaywallUITests.swift; sourceTree = "<group>"; };
 		DAAE9B9E2A78DBA8007F55D0 /* SpotifyPaywallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPaywallUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAAE9BAB2A78E552007F55D0 /* PaywallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewController.swift; sourceTree = "<group>"; };
+		DAAE9BAD2A78E587007F55D0 /* BannerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerInfo.swift; sourceTree = "<group>"; };
+		DAAE9BAF2A78E592007F55D0 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				DAAE9B7B2A78DBA6007F55D0 /* AppDelegate.swift */,
 				DAAE9B7D2A78DBA6007F55D0 /* SceneDelegate.swift */,
-				DAAE9B7F2A78DBA6007F55D0 /* ViewController.swift */,
+				DAAE9BAB2A78E552007F55D0 /* PaywallViewController.swift */,
+				DAAE9BAD2A78E587007F55D0 /* BannerInfo.swift */,
+				DAAE9BAF2A78E592007F55D0 /* BannerCell.swift */,
 				DAAE9B812A78DBA6007F55D0 /* Main.storyboard */,
 				DAAE9B842A78DBA7007F55D0 /* Assets.xcassets */,
 				DAAE9B862A78DBA7007F55D0 /* LaunchScreen.storyboard */,
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAAE9B802A78DBA6007F55D0 /* ViewController.swift in Sources */,
 				DAAE9B7C2A78DBA6007F55D0 /* AppDelegate.swift in Sources */,
+				DAAE9BB02A78E592007F55D0 /* BannerCell.swift in Sources */,
+				DAAE9BAE2A78E587007F55D0 /* BannerInfo.swift in Sources */,
 				DAAE9B7E2A78DBA6007F55D0 /* SceneDelegate.swift in Sources */,
+				DAAE9BAC2A78E552007F55D0 /* PaywallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
