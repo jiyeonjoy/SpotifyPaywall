@@ -101,7 +101,7 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_spotify" translatesAutoresizingMaskIntoConstraints="NO" id="7JW-KS-QBC">
-                                <rect key="frame" x="50" y="738" width="293" height="80"/>
+                                <rect key="frame" x="50" y="688" width="293" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="7HE-95-Lre"/>
                                 </constraints>
@@ -110,7 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7JW-KS-QBC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Zz-Jn-4OV"/>
+                            <constraint firstItem="7JW-KS-QBC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="5Zz-Jn-4OV"/>
                             <constraint firstItem="P3W-8V-J93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6c5-Dc-uQt"/>
                             <constraint firstAttribute="trailing" secondItem="P3W-8V-J93" secondAttribute="trailing" constant="30" id="CDf-Sz-8jr"/>
                             <constraint firstItem="9kd-c6-S14" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CMe-e5-ZPB"/>
@@ -126,6 +126,10 @@
                             <constraint firstItem="P3W-8V-J93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="wkM-o8-fu2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Lvm-45-FiU" id="REY-C2-BpU"/>
+                        <outlet property="pageControl" destination="uPb-gU-JUM" id="BFD-3R-7be"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
