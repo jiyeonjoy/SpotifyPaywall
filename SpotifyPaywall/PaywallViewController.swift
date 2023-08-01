@@ -38,7 +38,9 @@ class PaywallViewController: UIViewController {
         datasource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        collectionView.alwaysBounceVertical = false
         
+        self.pageControl.numberOfPages = bannerInfos.count
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -46,10 +48,20 @@ class PaywallViewController: UIViewController {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.8), heightDimension: .absolute(200))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.8), heightDimension: .absolute(200)) // absolute 고정높이 200
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item]) // horizontal 스크롤 방향 가로
         
         let section = NSCollectionLayoutSection(group: group)
+//        section.orthogonalScrollingBehavior = .continuous
+//        section.orthogonalScrollingBehavior = .groupPaging
+        section.orthogonalScrollingBehavior = .groupPagingCentered
+        section.interGroupSpacing = 20 // 그룹간 마진 설정
+
+        section.visibleItemsInvalidationHandler = { (items, offset, env) in
+            let index = Int((offset.x / env.container.contentSize.width).rounded(.up))
+            print("--> \(index)")
+            self.pageControl.currentPage = index
+        }
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
